@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Malla Interactiva</title>
+</head>
+<body>
+    <div class="semesters">
+        <!-- 1er Año -->
+        <div class="semester" id="semester-1">
+            <h2>1er Año</h2>
+            <div class="courses">
+                <button class="course" id="course-1" onclick="toggleCourse('course-1')">Biología Celular</button>
+                <button class="course" id="course-2" onclick="toggleCourse('course-2')">Comunicación en Lengua Materna</button>
+                <button class="course" id="course-3" onclick="toggleCourse('course-3')">Educación Física y Salud</button>
+                <button class="course" id="course-4" onclick="toggleCourse('course-4')">Álgebra</button>
+                <button class="course" id="course-5" onclick="toggleCourse('course-5')">Papel del QF en la Historia y Sociedad</button>
+                <button class="course" id="course-6" onclick="toggleCourse('course-6')">Bases de Química</button>
+            </div>
+        </div>
+
+        <!-- 2do Año -->
+        <div class="semester" id="semester-2">
+            <h2>2do Año</h2>
+            <div class="courses">
+                <button class="course" id="course-7" onclick="toggleCourse('course-7')">Biología Humana (requiere Biología Celular)</button>
+                <button class="course" id="course-8" onclick="toggleCourse('course-8')">Reading Comprehension (requiere Comunicación en Lengua Materna)</button>
+                <button class="course" id="course-9" onclick="toggleCourse('course-9')">Física Básica (requiere Álgebra)</button>
+                <button class="course" id="course-10" onclick="toggleCourse('course-10')">Cálculo (requiere Álgebra)</button>
+                <button class="course" id="course-11" onclick="toggleCourse('course-11')">Responsabilidad Social del QF (requiere Papel del QF en la Historia y Sociedad)</button>
+                <button class="course" id="course-12" onclick="toggleCourse('course-12')">Equilibrio Químico (requiere Bases de Química)</button>
+            </div>
+        </div>
+
+        <!-- 3er Año -->
+        <div class="semester" id="semester-3">
+            <h2>3er Año</h2>
+            <div class="courses">
+                <button class="course" id="course-13" onclick="toggleCourse('course-13')">Fisiología General (requiere Biología Humana)</button>
+                <button class="course" id="course-14" onclick="toggleCourse('course-14')">Listening and Reading (requiere Reading Comprehension)</button>
+                <button class="course" id="course-15" onclick="toggleCourse('course-15')">Física para Ciencias (requiere Física Básica)</button>
+                <button class="course" id="course-16" onclick="toggleCourse('course-16')">OFG 1</button>
+                <button class="course" id="course-17" onclick="toggleCourse('course-17')">Taller de Proyectos Farmacéuticos (requiere Responsabilidad Social del QF)</button>
+                <button class="course" id="course-18" onclick="toggleCourse('course-18')">Química Orgánica (requiere Equilibrio Químico)</button>
+                <button class="course" id="course-19" onclick="toggleCourse('course-19')">Análisis Químico (requiere Equilibrio Químico)</button>
+            </div>
+        </div>
+
+        <!-- 4to Año -->
+        <div class="semester" id="semester-4">
+            <h2>4to Año</h2>
+            <div class="courses">
+                <button class="course" id="course-20" onclick="toggleCourse('course-20')">Bioquímica (requiere Fisiología General)</button>
+                <button class="course" id="course-21" onclick="toggleCourse('course-21')">OFG 2</button>
+                <button class="course" id="course-22" onclick="toggleCourse('course-22')">Química Física para la Farmacia (requiere Cálculo)</button>
+                <button class="course" id="course-23" onclick="toggleCourse('course-23')">Principios de Farmacología y Gestión del Medicamento (requiere Taller de Proyectos Farmacéuticos, Fisiología General)</button>
+                <button class="course" id="course-24" onclick="toggleCourse('course-24')">Química Orgánica Aplicada (requiere Química Orgánica)</button>
+                <button class="course" id="course-25" onclick="toggleCourse('course-25')">Análisis Instrumental (requiere Análisis Químico, Física para Ciencias)</button>
+            </div>
+        </div>
+
+        <!-- 5to Año -->
+        <div class="semester" id="semester-5">
+            <h2>5to Año</h2>
+            <div class="courses">
+                <button class="course" id="course-26" onclick="toggleCourse('course-26')">Bioquímica Clínica y Hematología General (requiere Bioquímica)</button>
+                <button class="course" id="course-27" onclick="toggleCourse('course-27')">Fisiopatología Humana (requiere Bioquímica)</button>
+                <button class="course" id="course-28" onclick="toggleCourse('course-28')">Inmunología (requiere Bioquímica)</button>
+                <button class="course" id="course-29" onclick="toggleCourse('course-29')">Comunicación Farmacéutica en Lengua Inglesa (requiere Principios de Farmacología y Gestión del Medicamento)</button>
+                <button class="course" id="course-30" onclick="toggleCourse('course-30')">Farmacoquímica y Análisis de Medicamento (requiere Análisis Instrumental, Principios de Farmacología y Gestión del Medicamento)</button>
+                <button class="course" id="course-31" onclick="toggleCourse('course-31')">Farmacognosia e Introducción a la Fitoterapia (requiere Análisis Instrumental, Química Orgánica Aplicada)</button>
+            </div>
+        </div>
+
+        <!-- Agregar los siguientes semestres aquí -->
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
