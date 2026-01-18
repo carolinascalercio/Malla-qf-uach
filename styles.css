@@ -1,0 +1,42 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.semesters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.semester {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.course {
+    background-color: pink;
+    border: 1px solid #000;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.course.approved {
+    background-color: purple;
+    text-decoration: line-through;
+}
+
+.course.prerequisite {
+    background-color: grey;
+    pointer-events: none;
+}
